@@ -1,0 +1,6 @@
+# ninja log v5
+3	676	1650147522469259049	CMakeFiles/TestingCLion.dir/src/impl/Request.cpp.o	9e49a9edd6ad045
+0	87	1650148307659715826	build.ninja	96d331257e516f56
+3	668	1650147522460735490	CMakeFiles/TestingCLion.dir/src/impl/CurlClient.cpp.o	a36d5fe51d78feea
+681	741	1650147522537185086	TestingCLion	a5e0850a93bc6db6
+2	681	1650147522475106491	CMakeFiles/TestingCLion.dir/main.cpp.o	f934e28fa2c1b789
