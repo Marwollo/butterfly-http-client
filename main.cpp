@@ -9,7 +9,9 @@ int main() {
     body["userId"] = 123;
     butterfly::Request request = butterfly::Request()
                         .withUrl("https://jsonplaceholder.typicode.com/posts")
-                        .withBody(body);
+                        .withBody(body)
+                        .withHeaderField("Authentication", "Bearer 1234")
+                        .withHeaderField("X-Another-Header", "4321");
     std::cout << request.send();
     return 0;
 }

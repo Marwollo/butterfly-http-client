@@ -21,6 +21,7 @@ std::string Request::send() const {
     CurlClient client;
     client.setUrl(this->getUrl());
     client.setBody(this->getBody());
+    client.setHeaders(this->getHeaders());
     client.run();
     return client.getResponse();
 }

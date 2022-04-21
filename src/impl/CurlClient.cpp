@@ -44,7 +44,7 @@ void CurlClient::setQuery(const std::unordered_map<std::string, std::string> &qu
 void CurlClient::setHeaders(const std::unordered_map<std::string, std::string> &headers) {
     for (const auto & header : headers) {
         std::string headerFormatted = header.first + ": " + header.second;
-        curl_slist_append(this->headers, headerFormatted.c_str());
+        this->headers = curl_slist_append(this->headers, headerFormatted.c_str());
     }
 }
 
